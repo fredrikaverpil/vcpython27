@@ -18,10 +18,8 @@ $packageArgs = @{
   softwareName  = 'Microsoft Visual C++ Compiler Package for Python 2.7'
   checksum      = '4e6342923a8153a94d44ff7307fcdd1f'
   checksumType  = 'md5'
-  checksum64    = ''
-  checksumType64= 'md5'
 }
 
 
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url [-validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType]
+Install-ChocolateyPackage $packageName $fileType $silentArgs $url -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType
