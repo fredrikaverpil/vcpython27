@@ -12,7 +12,7 @@ $packageArgs = @{
   fileType      = 'msi'
   url           = $url
 
-  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
+  silentArgs    = "ALLUSERS=1 /qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
 
   softwareName  = 'Microsoft Visual C++ Compiler Package for Python 2.7'
@@ -22,4 +22,4 @@ $packageArgs = @{
 
 
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType
+Install-ChocolateyPackage @packageArgs

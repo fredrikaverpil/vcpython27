@@ -4,11 +4,13 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = 'vcpython27'
 $softwareName = 'Microsoft Visual C++ Compiler Package for Python 2.7'
-$installerType = 'MSI'
+$installerType = 'MSI' 
 
 $silentArgs = '/qn /norestart'
 $validExitCodes = @(0, 3010, 1605, 1614, 1641)
-
+if ($installerType -ne 'MSI') {
+  $validExitCodes = @(0)
+}
 
 $uninstalled = $false
 $local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
@@ -20,7 +22,7 @@ $key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
          | ? { $_.DisplayName -like "$softwareName" }
 
 if ($key.Count -eq 1) {
-  $key | % {
+  $key | % { 
     $file = "$($_.UninstallString)"
 
     if ($installerType -eq 'MSI') {
@@ -43,3 +45,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $_.DisplayName"}
 }
+
+
+
