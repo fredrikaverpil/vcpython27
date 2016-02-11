@@ -1,1 +1,1 @@
-choco install vcpython27 -fdv -source "'%cd%;https://chocolatey.org/api/v2/'" -y --debug
+choco install vcpython27 -fdv --source="'%cd%;https://chocolatey.org/api/v2/'" -y --debug
