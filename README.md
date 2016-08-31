@@ -23,13 +23,13 @@ choco pack
 CMD.exe:
 
 ```cmd
-choco install package-name -s '%cd%' -f
+choco install vcpython27 -s '%cd%' -f
 ```
 
 Powershell:
 
 ```powershell
-choco install package-name -s "$pwd" -f
+choco install vcpython27 -s "$pwd" -f
 ```
 
 #### Uninstall
