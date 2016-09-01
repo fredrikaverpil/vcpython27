@@ -1,7 +1,6 @@
 # vcpython27
 
-This is a working version of the broken Chocolatey package at https://chocolatey.org/packages/vcpython27
-Installation instructions are located [here](https://github.com/fredrikaverpil/vcpython27/releases).
+This is a working version of the broken [Chocolatey package](https://chocolatey.org/packages/vcpython27). Installation instructions and release notes are located [here](https://github.com/fredrikaverpil/vcpython27/releases).
 
 <br>
 
