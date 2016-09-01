@@ -10,6 +10,12 @@ For development and testing, see the official [quickstart guide](https://github.
 
 <br>
 
+### Download and install package
+
+Please see instructions [here](https://github.com/fredrikaverpil/vcpython27/releases).
+
+### Development
+
 #### Download and create the package
 
 ```cmd
