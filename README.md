@@ -2,19 +2,13 @@
 
 This is a working version of the broken Chocolatey package at https://chocolatey.org/packages/vcpython27
 
-<br>
-
-## Installing this package
-
-For development and testing, see the official [quickstart guide](https://github.com/chocolatey/choco/wiki/CreatePackagesQuickStart#quick-start-guide).
+Please see instructions [here](https://github.com/fredrikaverpil/vcpython27/releases) on how to download and install this package.
 
 <br>
-
-### Download and install package
-
-Please see instructions [here](https://github.com/fredrikaverpil/vcpython27/releases).
 
 ### Development
+
+For development and testing, see the official [quickstart guide](https://github.com/chocolatey/choco/wiki/CreatePackagesQuickStart#quick-start-guide).
 
 #### Download and create the package
 
