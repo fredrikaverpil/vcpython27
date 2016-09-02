@@ -23,7 +23,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/vcpython27.png</iconUrl>-->
     <dependencies>
-      <dependency id="vcredist2008" version="9.0.30729.1" />
+      <dependency id="vcredist2008" version="9.0.30729.6161" />
       <dependency id="dotnet3.5" version="3.5.20140403" />
     </dependencies>
     <releaseNotes>https://github.com/fredrikaverpil/vcpython27/releases</releaseNotes>
