@@ -7,26 +7,26 @@
     <title>Microsoft Visual C++ Compiler for Python 2.7</title>
     <version>9.0.0.30729</version>
     <authors>Microsoft</authors>
-    <owners>Microsoft</owners>
-    <!--<summary>__REPLACE__</summary>-->
+    <owners>fredrikaverpil</owners>
+    <summary>This package contains the compiler and set of system headers necessary for producing binary wheels for Python 2.7 packages.</summary>
     <description>This package contains the compiler and set of system headers necessary for producing binary wheels for Python 2.7 packages.
     </description>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</projectUrl>
     <packageSourceUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</packageSourceUrl>
-    <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
+    <docsUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</docsUrl>
+    <!--<projectSourceUrl></projectSourceUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>vcpython27 admin python compiler</tags>
     <copyright>Microsoft</copyright>
     <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/vcpython27.png</iconUrl>-->
     <dependencies>
-      <dependency id="vcredist2008" />
-      <dependency id="dotnet3.5" />
+      <dependency id="vcredist2008" version="9.0.30729.1" />
+      <dependency id="dotnet3.5" version="3.5.20140403" />
     </dependencies>
-    <!--<releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes>-->
+    <releaseNotes>https://github.com/fredrikaverpil/vcpython27/releases</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
   <files>
