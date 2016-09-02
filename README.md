@@ -1,6 +1,6 @@
 # vcpython27
 
-This is a working version of the broken [Chocolatey package](https://chocolatey.org/packages/vcpython27). Installation instructions and release notes are located [here](https://github.com/fredrikaverpil/vcpython27/releases).
+A [Chocolatey](https://chocolatey.org) package which installs Visual C++ Compiler for Python 2.7 and its dependencies. Release notes are located [here](https://github.com/fredrikaverpil/vcpython27/releases). Please also see the official package page here: https://chocolatey.org/packages/vcpython27
 
 <br>
 
