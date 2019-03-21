@@ -3,9 +3,10 @@
 
 # https://blog.travis-ci.com/2018-10-11-windows-early-release
 # https://docs.travis-ci.com/user/reference/windows
-# https://chocolatey.org/packages/python
+# https://chocolatey.org/packages/vcpython27
 
 os: windows  # Windows Server, version 1803
+language: shell  # 'language: python' is not yet supported on Windows
 script: choco install vcpython27  # tries to install dotnet3.5 on top of dotnet4.6.2
 after_failure:
   - ls C:\ProgramData\chocolatey\logs\
