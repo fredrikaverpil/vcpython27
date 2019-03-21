@@ -1,0 +1,12 @@
+# Is there a way to tell choco install vcpython27 not to install its dotnet dependency?
+# This formula currently fails on Travis CI Windows environments...
+
+# https://blog.travis-ci.com/2018-10-11-windows-early-release
+# https://docs.travis-ci.com/user/reference/windows
+# https://chocolatey.org/packages/python
+
+os: windows  # Windows Server, version 1803
+script: choco install vcpython27  # tries to install dotnet3.5 on top of dotnet4.6.2
+after_failure:
+  - ls C:\ProgramData\chocolatey\logs\
+  - cat C:\ProgramData\chocolatey\logs\chocolatey.log
