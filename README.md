@@ -6,13 +6,12 @@ A [Chocolatey](https://chocolatey.org) package which installs the Microsoft Visu
 
 <br>
 
-Note: to avoid installing dependencies:
+Note: to avoid installing the __dotnet__ dependency (especially on Travis CI):
 
-```
+```cmd
 choco install python2 vcredist2008
 choco install --ignore-dependencies vcpython27
 ```
-
 
 ### Development
 
