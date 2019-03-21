@@ -10,4 +10,5 @@ language: shell  # 'language: python' is not yet supported on Windows
 script: choco install vcpython27  # tries to install dotnet3.5 on top of dotnet4.6.2
 after_failure:
   - ls C:/ProgramData/chocolatey/logs
-  - cat C:/ProgramData/chocolatey/logs/chocolatey.log
+  # Uncomment the next line to get the detailed dump
+  # - cat C:/ProgramData/chocolatey/logs/chocolatey.log
