@@ -13,7 +13,7 @@ before_script:
   # Pack and install locally built package
   - choco pack
   - choco install python2 vcredist2008
-  - choco install --ignore-dependencies -s $pwd -f
+  - choco install --ignore-dependencies -s $(pwd) -f
   # Uninstall
   - choco uninstall vcpython27
   
