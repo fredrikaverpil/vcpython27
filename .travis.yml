@@ -1,5 +1,5 @@
-# Is there a way to tell choco install vcpython27 not to install its dotnet dependency?
-# This formula currently fails on Travis CI Windows environments...
+# --ignore-dependencies is there a way to tell choco install vcpython27 not to install its dependencies
+# choco install vcpython27 currently fails on Travis CI Windows environments...
 
 # https://blog.travis-ci.com/2018-10-11-windows-early-release
 # https://docs.travis-ci.com/user/reference/windows
@@ -7,7 +7,9 @@
 
 os: windows  # Windows Server, version 1803
 language: shell  # 'language: python' is not yet supported on Windows
-script: choco install vcpython27  # tries to install dotnet3.5 on top of dotnet4.6.2
+# avoid installing dotnet3.5 on top of dotnet4.6.2
+before_script: choco install python2 vcredist2008 --ignore-dependencies vcpython27
+script: true  # Your tests go here...
 after_failure:
   - ls C:/ProgramData/chocolatey/logs
   # Uncomment the next line to get the detailed dump
