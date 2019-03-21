@@ -10,9 +10,13 @@ language: shell  # 'language: python' is not yet supported on Windows
 
 # avoid installing dotnet3.5 on top of dotnet4.6.2
 before_script:
+  # Pack and install locally built package
   - choco pack
   - choco install python2 vcredist2008
-  - choco install --ignore-dependencies vcpython27
+  - choco install --ignore-dependencies -s $pwd -f
+  # Uninstall
+  - choco uninstall vcpython27
+  
 script: true  # Your tests go here...
 after_failure:
   - ls C:/ProgramData/chocolatey/logs
