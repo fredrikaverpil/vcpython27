@@ -7,8 +7,10 @@
 
 os: windows  # Windows Server, version 1803
 language: shell  # 'language: python' is not yet supported on Windows
+
 # avoid installing dotnet3.5 on top of dotnet4.6.2
 before_script:
+  - choco pack
   - choco install python2 vcredist2008
   - choco install --ignore-dependencies vcpython27
 script: true  # Your tests go here...
