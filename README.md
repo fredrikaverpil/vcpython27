@@ -1,5 +1,7 @@
 # vcpython27
 
+[![Build Status](https://travis-ci.com/fredrikaverpil/vcpython27.svg?branch=master)](https://travis-ci.com/fredrikaverpil/vcpython27)
+
 A [Chocolatey](https://chocolatey.org) package which installs the Microsoft Visual C++ Compiler for Python 2.7 and its dependencies. Release notes are located [here](https://github.com/fredrikaverpil/vcpython27/releases). Please also see the official package page here: https://chocolatey.org/packages/vcpython27
 
 <br>
