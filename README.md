@@ -6,6 +6,14 @@ A [Chocolatey](https://chocolatey.org) package which installs the Microsoft Visu
 
 <br>
 
+Note: to avoid installing dependencies:
+
+```
+choco install python2 vcredist2008
+choco install --ignore-dependencies vcpython27
+```
+
+
 ### Development
 
 For development and testing, see the official [quickstart guide](https://github.com/chocolatey/choco/wiki/CreatePackagesQuickStart#quick-start-guide).
