@@ -4,22 +4,22 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>vcpython27</id>
-    <title>Microsoft Visual C++ Compiler for Python 2.7</title>
-    <version>9.0.0.30729</version>
+    <title>[Deprecated] Microsoft Visual C++ Compiler for Python 2.7</title>
+    <version>10.0.0.0</version>
     <authors>Microsoft</authors>
     <owners>fredrikaverpil</owners>
-    <summary>This package contains the compiler and set of system headers necessary for producing binary wheels for Python 2.7 packages.</summary>
-    <description>This package contains the compiler and set of system headers necessary for producing binary wheels for Python 2.7 packages.
+    <summary>This package used to contain the compiler and set of system headers necessary for producing binary wheels for Python 2.7 packages. But it is no longer functional, as Microsoft removed the download from their website.</summary>
+    <description>Microsoft has removed the download since it is no longer supported (support ended in 2018 according to their webpage). Therefore this package will not work and is now deprecated.
     </description>
-    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</projectUrl>
-    <packageSourceUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</packageSourceUrl>
-    <docsUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</docsUrl>
+    <projectUrl>https://github.com/fredrikaverpil/vcpython27</projectUrl>
+    <packageSourceUrl>https://github.com/fredrikaverpil/vcpython27</packageSourceUrl>
+    <docsUrl>https://github.com/fredrikaverpil/vcpython27</docsUrl>
     <!--<projectSourceUrl></projectSourceUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>vcpython27 admin python compiler</tags>
     <copyright>Microsoft</copyright>
-    <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=44266</licenseUrl>
+    <licenseUrl>https://github.com/fredrikaverpil/vcpython27</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/vcpython27.png</iconUrl>-->
     <dependencies>
@@ -29,7 +29,6 @@
     <releaseNotes>https://github.com/fredrikaverpil/vcpython27/releases</releaseNotes>
     <!--<provides></provides>-->
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
+
